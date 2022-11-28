@@ -15,4 +15,4 @@
   $conn->close();
   header("location: resevation.php");
   
-?> 
+?>
