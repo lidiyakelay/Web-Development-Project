@@ -39,7 +39,7 @@ if(!empty($_SESSION["id"])){
 					<input type="submit" name="login" class="register" value="Login">
 				</div>
                 <div class="form-row-last">
-                <a href="registrationpage.php">don't have an account?</a>
+                <a href="Registrationpage.php" style="color:#FF0000;">Don't have an account?</a>
 				</div>
 			</form>
 		</div>

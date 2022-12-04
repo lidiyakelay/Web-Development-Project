@@ -84,8 +84,7 @@
                         <div class="col-md-12">
                             <div >
                                 <table class="table table-bordered table-dark table-hover">
-                                 
-                                  <tbody>
+                                <tbody>
                                     <?php include 'read.php'; ?>
                                   </tbody>
                                 </table>
