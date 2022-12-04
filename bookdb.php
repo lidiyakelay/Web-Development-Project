@@ -1,3 +1,3 @@
 <?php
-  $conn = new mysqli("localhost", "root", "", "bookingdb");
+  $conn = new mysqli("localhost", "root", "root", "bookingdb");
 ?>
