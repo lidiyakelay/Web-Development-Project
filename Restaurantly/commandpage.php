@@ -1,3 +1,10 @@
+<?php
+
+include 'dbcon/bookdb.php';
+if(empty($_SESSION["admin"])){
+    header("Location: index.php");
+  }
+?>
 <!DOCTYPE html>
 <html>
 <head>
