@@ -1,5 +1,5 @@
 <?php
-require '../bookdb.php';
+require 'dbcon/bookdb.php';
 $_SESSION = [];
 session_unset();
 session_destroy();

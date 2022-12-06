@@ -1,5 +1,5 @@
 <?php
-  include '../bookdb.php';
+  include 'dbcon/bookdb.php';
   $sql = "select * from table_booking";
   $result = $conn->query($sql);
   while($row = $result->fetch_assoc()) {

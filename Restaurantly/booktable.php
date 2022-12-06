@@ -1,6 +1,6 @@
 <?php
 
-include '../bookdb.php';
+include 'dbcon/bookdb.php';
 if(empty($_SESSION["id"])){
     header("Location: index.php");
   }
@@ -65,7 +65,7 @@ if(empty($_SESSION["id"])){
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto active" href="home.html">Home</a></li>
+          <li><a class="nav-link scrollto active" href="home.php">Home</a></li>
           <li><a class="nav-link scrollto" href="Resevation.php">Reservation</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>

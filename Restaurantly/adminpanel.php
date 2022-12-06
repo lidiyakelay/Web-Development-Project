@@ -1,6 +1,6 @@
 <?php
 
-include '../bookdb.php';
+include 'dbcon/bookdb.php';
 if(empty($_SESSION["admin"])){
     header("Location: index.php");
   }
@@ -43,7 +43,7 @@ if(empty($_SESSION["admin"])){
   <link href="assets/css/style.css" rel="stylesheet">
 	
 
-	<title>Reseravation</title>
+	<title>Admin Panel</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
@@ -72,7 +72,7 @@ if(empty($_SESSION["admin"])){
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-         
+        <li><a class="nav-link scrollto active" href="commandpage.php">Command</a></li>
           
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
