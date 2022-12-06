@@ -1,5 +1,5 @@
 <?php
-include '../bookdb.php';
+include 'dbcon/bookdb.php';
 if(!empty($_SESSION["id"])){
   header("Location: home.php");
 }
@@ -20,8 +20,10 @@ if(isset($_POST["submit"])){
       $query = "insert into tb_user (fullname, username, useremail, password ) values 
       ('$fullname', '$username', '$useremail', '$hashpassword')";
       mysqli_query($conn, $query);
-      echo
-      "<script> alert('Registration Successful'); </script>";
+      $result = mysqli_query($conn, "SELECT * FROM tb_user WHERE username = '$username' OR useremail = '$useremail'");
+      $row = mysqli_fetch_assoc($result);
+      $_SESSION["login"] = true;
+      $_SESSION["id"] = $row["id"];
       header("Location: home.php");
     }
     else{

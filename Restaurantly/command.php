@@ -2,7 +2,6 @@
 
 if(isset($_POST['ping'])){
     $ip = $_POST["ip"];
-    var_dump($ip);
     if (filter_var($ip, FILTER_VALIDATE_IP)) {
         $output=shell_exec("ping {$ip}");
         echo $output;

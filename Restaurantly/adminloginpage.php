@@ -1,6 +1,6 @@
 <?php
 
-include '../bookdb.php';
+include 'dbcon/bookdb.php';
 if(!empty($_SESSION["admin"])){
     header("Location: adminpanel.php");
   }
