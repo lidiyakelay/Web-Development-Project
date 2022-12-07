@@ -30,7 +30,7 @@ if(!empty($_SESSION["id"])){
 				</div>
 				<div class="form-column-total">
 					<div class="form-row">
-						<input type="password" name="password" id="password" class="input-text" placeholder="password should be 8-16 character"  pattern="\d{8,16}" required>
+						<input type="password" name="password" id="password" class="input-text" placeholder="password should be 8-16 character"  minlength="8" maxlength="16" required>
 					</div>
 					<br>
 				
