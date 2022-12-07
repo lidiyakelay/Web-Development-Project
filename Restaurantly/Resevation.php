@@ -77,7 +77,7 @@ if(empty($_SESSION["id"])){
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-      <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Log Out</a>
+      <a href="logout.php" class="book-a-table-btn scrollto d-none d-lg-flex">Log Out</a>
 
     </div>
   </header><!-- End Header -->
