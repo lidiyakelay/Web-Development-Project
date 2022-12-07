@@ -32,6 +32,8 @@ if(isset($_POST["login"])){
     $query = "insert into tb_admin (name, password ) values 
     ('$name','$hashpassword')";
     mysqli_query($conn, $query);
+    $_SESSION["login"] = true;
+    $_SESSION["admin"] = session_id();
     header("Location: adminpanel.php");
   }
 }
